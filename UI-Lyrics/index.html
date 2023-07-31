@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <img
+          id="artistimage"
+          src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/602577928680.jpg"
+          alt=""
+        />
+
+        <div class="title">
+          <h5 id="titlesong">All too well ( Lovers )</h5>
+          <h6 id="artist">Taylor Swift</h6>
+        </div>
+
+        <audio>
+          <source
+            src="All Too Well  Taylor Swift Lyrics.mp3"
+            type="audio/ogg"
+          />
+        </audio>
+
+        <div class="play">
+          <button><i class="fa-sharp fa-solid fa-backward-step"></i></button>
+          <button>
+            <i class="fa-solid fa-circle-play" id="circle-play"></i>
+          </button>
+          <button>
+            <i
+              class="fa-solid fa-circle-pause"
+              id="circle-pause"
+              style="display: none"
+            ></i>
+          </button>
+          <button><i class="fa-sharp fa-solid fa-forward-step"></i></button>
+        </div>
+      </div>
+
+      <div class="container2">
+        <h5 class="explore">Explore</h5>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'songlyrics')">
+            Lyrics
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'albums')">
+            Other Albums
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'artists')">
+            Related Artists
+          </button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="songlyrics" class="tabcontent">
+          <p id="songlyrics"></p>
+        </div>
+
+        <div id="albums" class="tabcontent">
+          <div class="album-container">
+
+          </div>
+        </div>
+
+        <div id="artists" class="tabcontent">
+          <div class="artists-container">
+
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
